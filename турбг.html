@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ТурБГ | Туристически услуги</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      color: black;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 0;
+      width: 200px;
+    }
+    .dropdown-menu a {
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown-menu a:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="bg-blue-900 text-white sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold">ТурБГ</div>
+      <nav class="space-x-4 hidden md:flex">
+        <div class="relative dropdown">
+          <button class="hover:text-yellow-300">1 ▾</button>
+          <div class="dropdown-menu">
+            <a href="#about">За нас</a>
+            <a href="#destinations">Дестинации</a>
+            <a href="#booking">Онлайн резервации</a>
+          </div>
+        </div>
+        <div class="relative dropdown">
+          <button class="hover:text-yellow-300">2 ▾</button>
+          <div class="dropdown-menu">
+            <a href="#contact">Контакти</a>
+            <a href="#contact-form">Форма за контакт</a>
+            <a href="#prices">Цени</a>
+          </div>
+        </div>
+        <a href="#booking" class="hover:text-yellow-300">Резервации</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-700 text-white text-center p-12">
+    <h1 class="text-4xl font-bold mb-4">Открий България с ТурБГ</h1>
+    <p class="text-xl">Екскурзии, почивки и незабравими преживявания</p>
+    <div class="mt-4">
+      <div class="relative inline-block">
+        <button class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-900">1 ▾</button>
+        <div class="dropdown-menu">
+          <a href="#about">За нас</a>
+          <a href="#destinations">Дестинации</a>
+          <a href="#booking">Онлайн резервации</a>
+        </div>
+      </div>
+      <div class="relative inline-block ml-4">
+        <button class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-900">2 ▾</button>
+        <div class="dropdown-menu">
+          <a href="#contact">Контакти</a>
+          <a href="#contact-form">Форма за контакт</a>
+          <a href="#prices">Цени</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="p-8 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4">За нас</h2>
+      <p>"ТурБГ" е водеща туристическа агенция, предлагаща пътувания в България и чужбина. Нашата мисия е да създаваме спомени, които остават завинаги.</p>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section id="destinations" class="p-8">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Дестинации</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="border rounded-lg p-4 shadow">
+          <img src="https://luckybansko.bg/wp-content/uploads/2020/11/2020-11-02_14h52_31.png" alt="Пирин" class="mb-2 rounded">
+          <h3 class="font-bold text-xl">Пирин</h3>
+          <p>Планински преходи и СПА релакс</p>
+        </div>
+        <div class="border rounded-lg p-4 shadow">
+          <img src="https://destinations.bg/wp-content/uploads/2021/12/%D0%A1%D1%82%D0%B0%D1%80%D0%B8%D1%8F%D1%82-%D0%B3%D1%80%D0%B0%D0%B4-%D0%BE%D1%82-%D0%BF%D1%82%D0%B8%D1%87%D0%B8-%D0%BF%D0%BE%D0%B3%D0%BB%D0%B5%D0%B4-%D0%93%D0%B0%D0%B1%D1%80%D0%B8%D0%B5%D0%BB-%D0%93%D0%B5%D0%BD%D1%87%D0%B5%D0%B2-min.jpeg" alt="Созопол" class="mb-2 rounded">
+          <h3 class="font-bold text-xl">Созопол</h3>
+          <p>Море, култура и романтика</p>
+        </div>
+        <div class="border rounded-lg p-4 shadow">
+          <img src="https://www.veliko-tarnovo.bg/uploads/slider/2024/a9698a837e44e0a3b421b85d8a05b948.jpg" alt="Велико Търново" class="mb-2 rounded">
+          <h3 class="font-bold text-xl">Велико Търново</h3>
+          <p>История и архитектура</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="p-8 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Онлайн резервации</h2>
+      <form id="bookingForm" class="space-y-4">
+        <input type="text" placeholder="Име" class="w-full p-2 border rounded" required>
+        <input type="email" placeholder="Имейл" class="w-full p-2 border rounded" required>
+        <select class="w-full p-2 border rounded" required>
+          <option>Избери дестинация</option>
+          <option>Пирин</option>
+          <option>Созопол</option>
+        </select>
+        <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">Резервирай</button>
+      </form>
+      <p id="bookingMsg" class="text-green-600 font-bold mt-4 hidden">Успешно изпратена резервация!</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="p-8">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Контакти</h2>
+      <p>Ние от "ТурБГ" сме на разположение да ви помогнем с всякакви въпроси относно нашите услуги и резервации.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div class="p-6 border rounded shadow">
+          <h3 class="text-xl font-semibold mb-4">Контактна информация</h3>
+          <p><strong>Фирма:</strong> ТурБГ ЕООД</p>
+          <p><strong>Телефон:</strong> +359 88 123 4567</p>
+          <p><strong>Имейл:</strong> info@turbg.com</p>
+          <p><strong>Адрес:</strong> София, ул. "Природа" 45</p>
+          <p><strong>Работно време:</strong> Понеделник - Петък: 09:00 - 18:00</p>
+        </div>
+        <div id="contact-form" class="p-6 border rounded shadow">
+          <h3 class="text-xl font-semibold mb-4">Форма за контакт</h3>
+          <form id="contactForm" class="space-y-4">
+            <input type="text" placeholder="Име" class="w-full p-2 border rounded" required>
+            <input type="email" placeholder="Имейл" class="w-full p-2 border rounded" required>
+            <textarea placeholder="Съобщение" class="w-full p-2 border rounded" required></textarea>
+            <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">Изпрати</button>
+          </form>
+          <p id="contactMsg" class="text-green-600 font-bold mt-4 hidden">Съобщението е изпратено успешно!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prices -->
+  <section id="prices" class="p-8 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Цени</h2>
+      <p>Нашите цени са конкурентни и съобразени с нуждите на клиентите. Свържете се с нас за персонализирана оферта!</p>
+      <ul class="list-disc pl-6 mt-4">
+        <li>Планински турове – от 120 лв./човек</li>
+        <li>Морски почивки – от 180 лв./човек</li>
+        <li>Градски уикенди – от 100 лв./човек</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white p-4 text-center relative">
+    <div class="mb-2">
+      <a href="https://facebook.com" class="mx-2">Facebook</a>
+      <a href="https://instagram.com" class="mx-2">Instagram</a>
+      <a href="https://twitter.com" class="mx-2">Twitter</a>
+    </div>
+    <p>&copy; 2025 ТурБГ. Всички права запазени.</p>
+    <a href="#" class="absolute right-4 bottom-4 bg-white text-blue-900 p-2 rounded-full shadow hover:bg-gray-200">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.dropdown').forEach(function(dropdown) {
+      dropdown.addEventListener('mouseover', function() {
+        this.querySelector('.dropdown-menu').style.display = 'block';
+      });
+      dropdown.addEventListener('mouseout', function() {
+        this.querySelector('.dropdown-menu').style.display = 'none';
+      });
+    });
+
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('bookingMsg').classList.remove('hidden');
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('contactMsg').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
